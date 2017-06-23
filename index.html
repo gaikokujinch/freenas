@@ -1,0 +1,128 @@
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <style>    
+    .fluid-container {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .nav-tabs>li>a.sabnzbd_logo {
+        background: url("http://192.168.1.3:8080/static/images/logo.png") no-repeat top right;
+        background-position: 0 0px;
+        float: left;
+        height: 40px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .nav-tabs>li>a.headphones_logo {
+        background: url("http://192.168.1.3:8181/images/headphoneslogo.png") no-repeat top right;
+        background-size: contain;
+        float: left;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .nav-tabs>li>a.plex_logo {
+        background: url("http://192.168.1.3:32400/web/img/base/plex-logo.96faf245690b14fdd33eccd3294ac57f.svg") no-repeat top right;
+        background-color: #1f1f1f;
+        background-size: contain;
+        float: left;
+        width: 80px;
+        height: 40px;
+    }
+        
+    .nav-tabs>li>a.plexpy_logo {
+        background: url("http://192.168.1.3:32400/web/img/base/plex-logo.96faf245690b14fdd33eccd3294ac57f.svg") no-repeat top right;
+        background-color: #1f1f1f;
+        background-size: contain;
+        float: left;
+        width: 80px;
+        height: 40px;
+    }
+    
+    .nav-tabs>li>a.calibre_logo {
+        background: url("http://192.168.1.3:8082/static/calibre_banner.png") no-repeat top right;
+        background-size: contain;
+        height: 40px;
+        width: 150px;
+    }
+    
+    .nav-tabs>li>a.madsonic_logo {
+        background: url("http://192.168.1.3:4040/icons/madsonic_sunny/logo.png") no-repeat top right;
+        background-size: contain;
+        height: 40px;
+        width: 160px;
+    }
+    
+    .nav-tabs>li>a.freenas_logo {
+        background: url("http://192.168.1.2/static/images/ui/freenas-logo.png") no-repeat top right;
+        background-size: cover;
+        height: 40px;
+        width: 150px;
+    }
+    </style>
+    <title>Home Media</title>
+</head>
+<body>
+<div>
+  <ul class="nav nav-tabs" id="myTabs">
+    <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+    <li><a href="#freenas" data-toggle="tab" class="freenas_logo"></a></li>
+    <li><a href="#freenasftp" data-toggle="tab">NAS FTP</a></li>
+    <li><a href="#plex" data-toggle="tab" class="plex_logo" alt="Plex">Plex</a></li>
+    <li><a href="#plexpy" data-toggle="tab" class="plexpy_logo" alt="PlexPy">PlexPy</a></li>
+    <li><a href="#sabnzbd" data-toggle="tab" class="sabnzbd_logo" alt="Sabnzbd"></a></li>
+    <li><a href="#sickrage" data-toggle="tab">Sickrage</a></li>
+    <li><a href="#sonarr" data-toggle="tab">Sonarr</a></li>
+    <li><a href="#couchpotato" data-toggle="tab">Couch Potato</a></li>
+    <li><a href="#headphones" data-toggle="tab" class="headphones_logo" alt="Headphones"></a></li>
+    <li><a href="#deluge" data-toggle="tab">Deluge</a></li>
+    <li><a href="#calibre" data-toggle="tab" class="calibre_logo"></a></li>
+    <li><a href="#ttrss" data-toggle="tab">TT-RSS</a></li>
+    <li><a href="#madsonic" data-toggle="tab" class="madsonic_logo"></a></li>
+  </ul>
+</div>
+<div>
+  <div class="tab-content">
+    <div class="tab-pane active" id="home">
+        <p>Home!</p>
+    </div>
+    <div class="tab-pane" id="freenas" data-src="http://192.168.1.2"><iframe src="" allowfullscreen></iframe></div>
+    <div class="tab-pane" id="freenasftp" data-src="ftp://192.168.1.3"><iframe src="" allowfullscreen></iframe></div>
+    <div class="tab-pane" id="sabnzbd" data-src="http://192.168.1.3:8080"><iframe src="" allowfullscreen></iframe></div>
+    <div class="tab-pane" id="sickrage" data-src="http://192.168.1.3:8081"><iframe src="" allowfullscreen></iframe></div>
+    <div class="tab-pane" id="sonarr" data-src="http://192.168.1.3:8989"><iframe src="" allowfullscreen></iframe></div>
+    <div class="tab-pane" id="couchpotato" data-src="http://192.168.1.3:5050"><iframe src="" allowfullscreen></iframe></div>
+    <div class="tab-pane" id="headphones" data-src="http://192.168.1.3:8181"><iframe src="" allowfullscreen></iframe></div>
+    <div class="tab-pane" id="plex" data-src="http://192.168.1.3:32400/web/"><iframe src="" allowfullscreen></iframe></div>
+    <div class="tab-pane" id="plexpy" data-src="http://192.168.1.3:8083"><iframe src="" allowfullscreen></iframe></div>
+    <div class="tab-pane" id="deluge" data-src="http://192.168.1.3:8112"><iframe src="" allowfullscreen></iframe></div>
+    <div class="tab-pane" id="calibre" data-src="http://192.168.1.3:8082"><iframe src="" allowfullscreen></iframe></div>
+    <div class="tab-pane" id="ttrss" data-src="http://192.168.1.3/tt-rss/"><iframe src="" allowfullscreen></iframe></div>
+    <div class="tab-pane" id="madsonic" data-src="http://192.168.1.3:4040"><iframe src="" allowfullscreen></iframe></div>
+  </div>
+</div>
+<script>
+$(document).ready(function() {
+  $('#myTabs').on('show.bs.tab', function(e) {
+      var paneId = $(e.target).attr('href');
+      var src = $(paneId).attr('data-src');
+      if ($(paneId+" iframe").attr("src")=="") {
+          $(paneId+" iframe").attr("src", src);
+      }
+  });
+});
+</script>
+</body>
+</html>
